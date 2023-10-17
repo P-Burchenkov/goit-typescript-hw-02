@@ -3,5 +3,15 @@
   І так само визначте змінну, яка може приймати тільки одне з двох рядкових значень: 'enable' або 'disable' (literal type)?
 */
 
-let union;
-let literal;
+let union: string | number;
+
+enum Acsessebility {
+  Enable = "enable",
+  Disable = "disable"
+}
+
+let literal: Acsessebility ;
+
+literal = Acsessebility.Disable;
+
+literal = Acsessebility.Enable;
