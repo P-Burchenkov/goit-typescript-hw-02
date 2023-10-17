@@ -14,8 +14,6 @@ enum Week {
 }
 
 function isDayoff(day: Week): boolean{
-  if (day === Week.Saturday || day === Week.Monday) {
-    return true;
-  } else {return false}
+ return (day === Week.Saturday || day === Week.Monday) 
 }
 
